@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+main{
+    border: 1px solid black;
+    width: 100vh;
+    margin: auto;
+}
+header,
+nav,
+article,
+section{
+    margin: 5px;
+    border: 1px solid black;
+}
+nav{
+    background-color: gray;
+}
+header{
+    padding:10px
+}
+img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+#kiskepek{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2px
+}
+#kiskepek img{
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    height: 100%;
+    list-style: none;
+}
+nav ul li{
+    padding: 7px;
+}
+nav ul li a{
+    padding:7px;
+    width: 100%;
+    color: red;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    height: 100%;
+    background-color: red;
+    color: white;
+}
+@media(max-width:700px){
+    body{
+        text-align: center;
+    }
+    #kiskepek{
+        grid-template-columns: 1fr;
+    }
+    nav ul{
+        grid-template-columns: 1fr;
+    }
+    #ures{
+        display: none;
+    }
+    
+}
+    
